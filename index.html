@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pandey Hotel</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Pandey Hotel</h1>
+    <nav>
+      <ul>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#booking">Book Now</a></li>
+        <li><a href="#contact">Contact</a></li>
+         <li><a href="#About-Us">About-Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Relax by the beach</h2>
+    <p>Enjoy your stay at our luxurious hotel.</p>
+    <a href="#booking" class="btn">Book Your Stay</a>
+  </section>
+  <section id="rooms" class="rooms">
+    <h2>Our Rooms</h2>
+    <div class="room">
+      <img src="delux.jpg" alt="Room 1"/>
+      <h3>Deluxe Room</h3>
+      <p>Sea view, king-size bed, free Wi-Fi</p>
+      <p class="price">$1500/night</p>
+    </div>
+    <div class="room">
+      <img src="suite.jpg" alt="Room 2"/>
+      <h3>Suite</h3>
+      <p>Private balcony, ocean view, breakfast included</p>
+      <p class="price">$2000/night</p>
+    </div>
+    <div class="slider">
+  <img id="sliderImage"src="slider.jpeg",alt="Slider Image">
+</div>
+  </section>
+  <section id="booking"class="booking">
+    <h2>Book Your Stay</h2>
+    <form id="bookingForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required />
+      <label for="checkin">Check-in Date:</label>
+      <input type="date" id="checkin" required />
+      <label for="checkout">Check-out Date:</label>
+      <input type="date" id="checkout" required />
+      <label for="room">Room Type:</label>
+      <select id="room" required>
+        <option value="">Select a room</option>
+        <option value="Deluxe">Deluxe Room</option>
+        <option value="Suite">Suite</option>
+      </select>
+      <button type="submit">Confirm Booking</button>
+    </form>
+    <p id="confirmation" class="confirmation"></p>
+  </section>
+  <footer id="contact">
+    <p>Contact us: pandey243@.com | 9026154084</p>
+    <p>&copy; 2025  Pandey Hotel</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
